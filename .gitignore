@@ -1,0 +1,5 @@
+client_secret.json
+google_session.json
+*.sqlite3
+__pycache__/
+*.pyc
