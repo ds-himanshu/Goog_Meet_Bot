@@ -15,7 +15,7 @@ import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 GOOGLE_CLIENT_SECRET_FILE = os.path.join(BASE_DIR, "client_secret.json")
-GOOGLE_REDIRECT_URI = "https://b027-2401-4900-809b-71b0-c8cc-8ad1-3209-d3d4.ngrok-free.app/auth/google/callback/"  # Update with ngrok URL
+GOOGLE_REDIRECT_URI = "https://e68f-2401-4900-87f7-734a-7ca3-e0d9-dfd8-fb8f.ngrok-free.app/auth/google/callback/"  # Update with ngrok URL
 GOOGLE_SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-xx(@23i9azw)^2xja)!3*0=(7hivj*r^(ll-79x7$2%$s7n2d(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.ngrok-free.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'e68f-2401-4900-87f7-734a-7ca3-e0d9-dfd8-fb8f.ngrok-free.app']
 
 # Application definition
 

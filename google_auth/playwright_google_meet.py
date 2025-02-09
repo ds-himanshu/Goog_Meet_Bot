@@ -7,11 +7,11 @@ import logging
 # Setup logger
 logger = logging.getLogger(__name__)
 
+
 class GoogleMeetAutomation:
     """Class to automate joining a Google Meet and starting recording."""
 
-
-    MEETING_LINK = "https://meet.google.com/uod-gvhc-wtk?authuser=0"
+    MEETING_LINK = "https://meet.google.com/gwd-farf-ept"
     SESSION_FILE = os.path.join(settings.BASE_DIR, 'google_session.json')  # Path to store session file
 
     def __init__(self):
@@ -44,25 +44,32 @@ class GoogleMeetAutomation:
                 page = self.context.new_page()
                 page.goto(self.MEETING_LINK)
 
-                # Automate the joining process
-                page.wait_for_selector("//span[contains(text(),'Join now')]/..", timeout=10000)
-                page.click("//span[contains(text(),'Join now')]/..")
-                logger.info("Successfully joined the meeting!")
-
-                # Record the meeting if possible
-                page.wait_for_selector("(//button[@aria-label='More options'])[2]", timeout=10000)
-                page.click("(//button[@aria-label='More options'])[2]")
-                page.wait_for_selector("//*[text()='radio_button_checked']/ancestor::li", timeout=10000)
-                page.click("//*[text()='radio_button_checked']/ancestor::li")
-                page.click("//input[@type='checkbox']")
-
                 try:
-                    page.click("//*[text()='Start recording']")
-                    page.click("//*[text()='Start']")
-                except Exception:
-                    page.click("//*[text()='Start']")
+                    # Try "Join now" button first
+                    try:
+                        join_now = page.wait_for_selector("//span[contains(text(),'Join now')]/..", timeout=5000)
+                        join_now.click()
+                        logger.info("Successfully joined the meeting!")
+                        return  # Exit function after clicking "Join now"
+                    except Exception:
+                        logger.info("'Join now' button not found, trying 'Ask to join'.")
 
-                logger.info("Meeting joined and recording started.")
+                    # If "Join now" is not found, try "Ask to join"
+                    try:
+                        ask_to_join = page.wait_for_selector("button:has-text('Ask to join')", timeout=5000)
+                        ask_to_join.click()
+
+                        # Wait for confirmation message
+                        page.wait_for_selector("//div[contains(text(),'join the call when someone lets you in')]",
+                                               timeout=10000)
+                        logger.info("Asked to join the meeting - waiting for host approval")
+                    except Exception:
+                        logger.warning("Neither 'Join now' nor 'Ask to join' buttons found.")
+
+                except Exception as e:
+                    logger.error(f"Failed to join/request to join the meeting: {str(e)}")
+
+                # logger.info("Meeting joined and recording started.")
 
                 # Wait for all pages to close before exiting
                 while len(self.context.pages) > 0:

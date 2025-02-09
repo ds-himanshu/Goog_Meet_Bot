@@ -85,7 +85,7 @@ def get_stored_credentials():
 
         # Ensure expiry is timezone-aware
         expiry = latest_token.get_expiry()  # Use the model method
-        expiry=expiry.replace(tzinfo=None)
+        expiry = expiry.replace(tzinfo=None)
         credentials = Credentials(
             token=latest_token.token,
             refresh_token=latest_token.refresh_token,
@@ -108,35 +108,49 @@ def extract_meeting_details(request):
 
     try:
         service = build("calendar", "v3", credentials=credentials)
-
-        # Use explicit UTC time
         now = datetime.now(pytz.UTC)
 
         events_result = service.events().list(
             calendarId='primary',
-            timeMin=now.isoformat(),  # This ensures timezone info is included
+            timeMin=now.isoformat(),
             maxResults=10,
             singleEvents=True,
             orderBy='startTime'
         ).execute()
 
         events = events_result.get('items', [])
-
         meeting_details = []
-        for event in events:
-            meeting_info = {
-                'summary': event.get('summary', 'No Title'),
-                'start_time': event.get('start', {}).get('dateTime'),
-                'end_time': event.get('end', {}).get('dateTime'),
-                'meet_link': event.get('hangoutLink', ''),
-                'conference_uri': event.get('conferenceData', {})
-                .get('entryPoints', [{}])[0].get('uri', '')
-            }
-            meeting_details.append(meeting_info)
+
+        # Use existing CSV file
+        csv_filepath = 'meeting_invites.csv'
+
+        # Define CSV headers
+        csv_headers = ['Summary', 'Start Time', 'End Time', 'Meet Link', 'Conference URI']
+
+        # Append to existing CSV file
+        with open(csv_filepath, mode='a', newline='', encoding='utf-8') as file:
+            writer = csv.DictWriter(file, fieldnames=csv_headers)
+
+            # If file is empty, write headers
+            if os.path.getsize(csv_filepath) == 0:
+                writer.writeheader()
+
+            for event in events:
+                meeting_info = {
+                    'Summary': event.get('summary', 'No Title'),
+                    'Start Time': event.get('start', {}).get('dateTime'),
+                    'End Time': event.get('end', {}).get('dateTime'),
+                    'Meet Link': event.get('hangoutLink', ''),
+                    'Conference URI': event.get('conferenceData', {})
+                    .get('entryPoints', [{}])[0].get('uri', '')
+                }
+                meeting_details.append(meeting_info)
+                writer.writerow(meeting_info)
 
         return JsonResponse({
             "meetings": meeting_details,
-            "count": len(meeting_details)
+            "count": len(meeting_details),
+            "message": "Meeting details appended to meeting_invites.csv"
         })
 
     except Exception as e:
@@ -173,3 +187,11 @@ def join_meeting_view(request):
             "status": "error",
             "message": str(e)
         }, status=500)
+
+
+def cleanup_old_files(directory, max_files=10):
+    files = os.listdir(directory)
+    if len(files) > max_files:
+        files.sort(key=lambda x: os.path.getctime(os.path.join(directory, x)))
+        for file in files[:-max_files]:
+            os.remove(os.path.join(directory, file))
