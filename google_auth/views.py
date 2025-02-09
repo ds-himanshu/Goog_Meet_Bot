@@ -85,7 +85,7 @@ def get_stored_credentials():
 
         # Ensure expiry is timezone-aware
         expiry = latest_token.get_expiry()  # Use the model method
-
+        expiry=expiry.replace(tzinfo=None)
         credentials = Credentials(
             token=latest_token.token,
             refresh_token=latest_token.refresh_token,
