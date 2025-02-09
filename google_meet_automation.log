@@ -1,0 +1,181 @@
+INFO 2025-02-09 15:40:18,704 playwright_google_meet 68175 8735377472 Initializing automation for meeting: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:40:18,704 playwright_google_meet 68175 8735377472 Attempting to join meeting at: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:40:19,906 playwright_google_meet 68175 8735377472 Loaded existing session from file.
+INFO 2025-02-09 15:40:20,243 playwright_google_meet 68175 8735377472 Navigating to meeting URL: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:40:21,966 playwright_google_meet 68175 8735377472 Browser Console: %c%s color:teal;font-size:24px Developing an extension for Meet? An add-on would work better.
+INFO 2025-02-09 15:40:21,966 playwright_google_meet 68175 8735377472 Browser Console: %c%s color:teal;font-size:16px Extensions frequently cause user issues by altering the page.
+INFO 2025-02-09 15:40:21,967 playwright_google_meet 68175 8735377472 Browser Console: %c%s font-size:16px https://developers.google.com/meet/add-ons
+INFO 2025-02-09 15:40:21,978 playwright_google_meet 68175 8735377472 Browser Console: %c%s color: red; background: yellow; font-size: 24px; WARNING!
+INFO 2025-02-09 15:40:21,978 playwright_google_meet 68175 8735377472 Browser Console: %c%s font-size: 18px; Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you don't understand.
+INFO 2025-02-09 15:40:23,850 playwright_google_meet 68175 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 15:40:23,850 playwright_google_meet 68175 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 15:40:23,959 playwright_google_meet 68175 8735377472 Page title: Meet
+INFO 2025-02-09 15:40:23,960 playwright_google_meet 68175 8735377472 Page URL: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:40:32,868 playwright_google_meet 68175 8735377472 Clicking 'Ask to join' button
+INFO 2025-02-09 15:40:34,492 playwright_google_meet 68175 8735377472 Successfully requested to join
+ERROR 2025-02-09 15:40:39,658 playwright_google_meet 68175 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+ERROR 2025-02-09 15:40:39,696 playwright_google_meet 68175 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+INFO 2025-02-09 15:41:22,429 playwright_google_meet 69134 8735377472 Initializing automation for meeting: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:41:22,429 playwright_google_meet 69134 8735377472 Attempting to join meeting at: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:41:23,997 playwright_google_meet 69134 8735377472 Loaded existing session from file.
+INFO 2025-02-09 15:41:24,262 playwright_google_meet 69134 8735377472 Navigating to meeting URL: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:41:26,026 playwright_google_meet 69134 8735377472 Browser Console: %c%s color:teal;font-size:24px Developing an extension for Meet? An add-on would work better.
+INFO 2025-02-09 15:41:26,027 playwright_google_meet 69134 8735377472 Browser Console: %c%s color:teal;font-size:16px Extensions frequently cause user issues by altering the page.
+INFO 2025-02-09 15:41:26,027 playwright_google_meet 69134 8735377472 Browser Console: %c%s font-size:16px https://developers.google.com/meet/add-ons
+INFO 2025-02-09 15:41:26,040 playwright_google_meet 69134 8735377472 Browser Console: %c%s color: red; background: yellow; font-size: 24px; WARNING!
+INFO 2025-02-09 15:41:26,040 playwright_google_meet 69134 8735377472 Browser Console: %c%s font-size: 18px; Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you don't understand.
+INFO 2025-02-09 15:41:27,362 playwright_google_meet 69134 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 15:41:27,363 playwright_google_meet 69134 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 15:41:35,243 playwright_google_meet 69134 8735377472 Page title: Meet – gwd-farf-ept
+INFO 2025-02-09 15:41:35,244 playwright_google_meet 69134 8735377472 Page URL: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:41:35,379 playwright_google_meet 69134 8735377472 Clicking 'Ask to join' button
+INFO 2025-02-09 15:41:35,607 playwright_google_meet 69134 8735377472 Successfully requested to join
+ERROR 2025-02-09 15:41:40,778 playwright_google_meet 69134 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+ERROR 2025-02-09 15:41:40,814 playwright_google_meet 69134 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+INFO 2025-02-09 15:49:05,961 playwright_google_meet 75725 8735377472 Initializing automation for meeting: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:49:05,961 playwright_google_meet 75725 8735377472 Attempting to join meeting at: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:49:07,107 playwright_google_meet 75725 8735377472 Loaded existing session from file.
+INFO 2025-02-09 15:49:07,361 playwright_google_meet 75725 8735377472 Navigating to meeting URL: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:49:09,290 playwright_google_meet 75725 8735377472 Browser Console: %c%s color:teal;font-size:24px Developing an extension for Meet? An add-on would work better.
+INFO 2025-02-09 15:49:09,290 playwright_google_meet 75725 8735377472 Browser Console: %c%s color:teal;font-size:16px Extensions frequently cause user issues by altering the page.
+INFO 2025-02-09 15:49:09,290 playwright_google_meet 75725 8735377472 Browser Console: %c%s font-size:16px https://developers.google.com/meet/add-ons
+INFO 2025-02-09 15:49:09,304 playwright_google_meet 75725 8735377472 Browser Console: %c%s color: red; background: yellow; font-size: 24px; WARNING!
+INFO 2025-02-09 15:49:09,304 playwright_google_meet 75725 8735377472 Browser Console: %c%s font-size: 18px; Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you don't understand.
+INFO 2025-02-09 15:49:12,420 playwright_google_meet 75725 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 15:49:12,421 playwright_google_meet 75725 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 15:49:15,336 playwright_google_meet 75725 8735377472 Browser Console: Failed to load resource: the server responded with a status of 404 ()
+INFO 2025-02-09 15:49:16,162 playwright_google_meet 75725 8735377472 Browser Console: Failed to load resource: the server responded with a status of 404 ()
+INFO 2025-02-09 15:49:16,895 playwright_google_meet 75725 8735377472 Browser Console: Failed to load resource: the server responded with a status of 404 ()
+INFO 2025-02-09 15:49:19,552 playwright_google_meet 75725 8735377472 Page title: Meet – gwd-farf-ept
+INFO 2025-02-09 15:49:19,552 playwright_google_meet 75725 8735377472 Page URL: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:49:29,667 playwright_google_meet 75725 8735377472 Selector button:has-text('Ask to join') not found: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("button:has-text('Ask to join')") to be visible
+
+INFO 2025-02-09 15:49:39,672 playwright_google_meet 75725 8735377472 Selector //span[contains(text(),'Ask to join')]/.. not found: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("//span[contains(text(),'Ask to join')]/..") to be visible
+
+INFO 2025-02-09 15:49:49,675 playwright_google_meet 75725 8735377472 Selector button[aria-label='Ask to join'] not found: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("button[aria-label='Ask to join']") to be visible
+
+INFO 2025-02-09 15:49:49,706 playwright_google_meet 75725 8735377472 All buttons on page: ['more_vert', 'mic_none\narrow_drop_down\nMacBook Pro Microphone (Built-in)', 'arrow_drop_down\nMacBook Pro Speakers (Built-in)', 'videocam\narrow_drop_down\nFaceTime HD Camera (D288:CE50)', 'Join now', 'present_to_allPresent', 'devicesUse Companion Mode', 'castCast this meeting', 'Other ways to join\nexpand_more', 'mic_nonearrow_drop_downMacBook Pro Microphone (Built-in)', 'arrow_drop_downMacBook Pro Speakers (Built-in)', 'videocamarrow_drop_downFaceTime HD Camera (D288:CE50)']
+ERROR 2025-02-09 15:49:49,828 playwright_google_meet 75725 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+ERROR 2025-02-09 15:49:49,851 playwright_google_meet 75725 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+INFO 2025-02-09 15:53:48,836 playwright_google_meet 79700 8735377472 Initializing automation for meeting: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:53:48,836 playwright_google_meet 79700 8735377472 Attempting to join meeting at: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:53:49,993 playwright_google_meet 79700 8735377472 Loaded existing session from file.
+INFO 2025-02-09 15:53:50,221 playwright_google_meet 79700 8735377472 Navigating to meeting URL: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:53:51,407 playwright_google_meet 79700 8735377472 Browser Console: %c%s color:teal;font-size:24px Developing an extension for Meet? An add-on would work better.
+INFO 2025-02-09 15:53:51,407 playwright_google_meet 79700 8735377472 Browser Console: %c%s color:teal;font-size:16px Extensions frequently cause user issues by altering the page.
+INFO 2025-02-09 15:53:51,407 playwright_google_meet 79700 8735377472 Browser Console: %c%s font-size:16px https://developers.google.com/meet/add-ons
+INFO 2025-02-09 15:53:51,423 playwright_google_meet 79700 8735377472 Browser Console: %c%s color: red; background: yellow; font-size: 24px; WARNING!
+INFO 2025-02-09 15:53:51,424 playwright_google_meet 79700 8735377472 Browser Console: %c%s font-size: 18px; Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you don't understand.
+INFO 2025-02-09 15:53:52,530 playwright_google_meet 79700 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 15:53:52,530 playwright_google_meet 79700 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 15:53:55,320 playwright_google_meet 79700 8735377472 Browser Console: Failed to load resource: the server responded with a status of 404 ()
+INFO 2025-02-09 15:53:56,067 playwright_google_meet 79700 8735377472 Browser Console: Failed to load resource: the server responded with a status of 404 ()
+INFO 2025-02-09 15:53:56,790 playwright_google_meet 79700 8735377472 Browser Console: Failed to load resource: the server responded with a status of 404 ()
+INFO 2025-02-09 15:54:07,039 playwright_google_meet 79700 8735377472 Page title: Meet – gwd-farf-ept
+INFO 2025-02-09 15:54:07,039 playwright_google_meet 79700 8735377472 Page URL: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 15:54:07,175 playwright_google_meet 79700 8735377472 Clicking 'Join now' button
+INFO 2025-02-09 15:54:07,229 playwright_google_meet 79700 8735377472 Waiting for organizer to end the meeting...
+ERROR 2025-02-09 15:56:16,328 playwright_google_meet 79700 8735377472 Page Error: _.oh
+ERROR 2025-02-09 15:56:16,329 playwright_google_meet 79700 8735377472 Page Error: _.oh
+ERROR 2025-02-09 15:56:16,338 playwright_google_meet 79700 8735377472 Error waiting for meeting end: Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("//div[contains(text(),'You have been removed from the meeting') or contains(text(),'Meeting has ended')]") to be visible
+
+ERROR 2025-02-09 15:56:16,505 playwright_google_meet 79700 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+ERROR 2025-02-09 15:56:16,554 playwright_google_meet 79700 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+INFO 2025-02-09 16:03:46,054 playwright_google_meet 88131 8735377472 Initializing automation for meeting: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 16:03:46,054 playwright_google_meet 88131 8735377472 Attempting to join meeting at: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 16:03:47,273 playwright_google_meet 88131 8735377472 Loaded existing session from file.
+INFO 2025-02-09 16:03:47,690 playwright_google_meet 88131 8735377472 Navigating to meeting URL: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 16:03:48,959 playwright_google_meet 88131 8735377472 Browser Console: %c%s color:teal;font-size:24px Developing an extension for Meet? An add-on would work better.
+INFO 2025-02-09 16:03:48,959 playwright_google_meet 88131 8735377472 Browser Console: %c%s color:teal;font-size:16px Extensions frequently cause user issues by altering the page.
+INFO 2025-02-09 16:03:48,959 playwright_google_meet 88131 8735377472 Browser Console: %c%s font-size:16px https://developers.google.com/meet/add-ons
+INFO 2025-02-09 16:03:48,974 playwright_google_meet 88131 8735377472 Browser Console: %c%s color: red; background: yellow; font-size: 24px; WARNING!
+INFO 2025-02-09 16:03:48,974 playwright_google_meet 88131 8735377472 Browser Console: %c%s font-size: 18px; Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you don't understand.
+INFO 2025-02-09 16:03:49,974 playwright_google_meet 88131 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 16:03:49,974 playwright_google_meet 88131 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 16:03:54,398 playwright_google_meet 88131 8735377472 Page title: Meet – gwd-farf-ept
+INFO 2025-02-09 16:03:59,539 playwright_google_meet 88131 8735377472 Clicking 'Ask to join' button
+ERROR 2025-02-09 16:04:44,422 playwright_google_meet 88131 8735377472 Page Error: _.oh
+ERROR 2025-02-09 16:04:44,423 playwright_google_meet 88131 8735377472 Page Error: _.oh
+ERROR 2025-02-09 16:04:58,906 playwright_google_meet 88131 8735377472 Error waiting for join confirmation: Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("//div[contains(text(),'You’re in the meeting')]") to be visible
+
+ERROR 2025-02-09 16:04:59,001 playwright_google_meet 88131 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+ERROR 2025-02-09 16:04:59,024 playwright_google_meet 88131 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+INFO 2025-02-09 16:06:40,091 playwright_google_meet 90649 8735377472 Initializing automation for meeting: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 16:06:40,091 playwright_google_meet 90649 8735377472 Attempting to join meeting at: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 16:06:41,121 playwright_google_meet 90649 8735377472 Loaded existing session from file.
+INFO 2025-02-09 16:06:41,253 playwright_google_meet 90649 8735377472 Navigating to meeting URL: https://meet.google.com/gwd-farf-ept
+INFO 2025-02-09 16:06:43,146 playwright_google_meet 90649 8735377472 Browser Console: %c%s color:teal;font-size:24px Developing an extension for Meet? An add-on would work better.
+INFO 2025-02-09 16:06:43,147 playwright_google_meet 90649 8735377472 Browser Console: %c%s color:teal;font-size:16px Extensions frequently cause user issues by altering the page.
+INFO 2025-02-09 16:06:43,147 playwright_google_meet 90649 8735377472 Browser Console: %c%s font-size:16px https://developers.google.com/meet/add-ons
+INFO 2025-02-09 16:06:43,158 playwright_google_meet 90649 8735377472 Browser Console: %c%s color: red; background: yellow; font-size: 24px; WARNING!
+INFO 2025-02-09 16:06:43,159 playwright_google_meet 90649 8735377472 Browser Console: %c%s font-size: 18px; Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you don't understand.
+INFO 2025-02-09 16:06:44,123 playwright_google_meet 90649 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 16:06:44,124 playwright_google_meet 90649 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 16:06:51,065 playwright_google_meet 90649 8735377472 Page title: Meet – gwd-farf-ept
+INFO 2025-02-09 16:06:56,199 playwright_google_meet 90649 8735377472 Clicking 'Ask to join' button
+ERROR 2025-02-09 16:07:56,305 playwright_google_meet 90649 8735377472 Error waiting for join confirmation: Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator("//div[contains(text(),'You’re in the meeting')]") to be visible
+
+ERROR 2025-02-09 16:07:56,450 playwright_google_meet 90649 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+ERROR 2025-02-09 16:07:56,471 playwright_google_meet 90649 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+INFO 2025-02-09 17:30:02,100 playwright_google_meet 52684 8735377472 Initializing automation for meeting: https://meet.google.com/icg-upfd-xag
+INFO 2025-02-09 17:30:02,100 playwright_google_meet 52684 8735377472 Attempting to join meeting at: https://meet.google.com/icg-upfd-xag
+INFO 2025-02-09 17:30:05,763 playwright_google_meet 52684 8735377472 Loaded existing session from file.
+INFO 2025-02-09 17:30:06,216 playwright_google_meet 52684 8735377472 Navigating to meeting URL: https://meet.google.com/icg-upfd-xag
+INFO 2025-02-09 17:30:07,996 playwright_google_meet 52684 8735377472 Browser Console: %c%s color:teal;font-size:24px Developing an extension for Meet? An add-on would work better.
+INFO 2025-02-09 17:30:07,997 playwright_google_meet 52684 8735377472 Browser Console: %c%s color:teal;font-size:16px Extensions frequently cause user issues by altering the page.
+INFO 2025-02-09 17:30:07,997 playwright_google_meet 52684 8735377472 Browser Console: %c%s font-size:16px https://developers.google.com/meet/add-ons
+INFO 2025-02-09 17:30:08,024 playwright_google_meet 52684 8735377472 Browser Console: %c%s color: red; background: yellow; font-size: 24px; WARNING!
+INFO 2025-02-09 17:30:08,024 playwright_google_meet 52684 8735377472 Browser Console: %c%s font-size: 18px; Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you don't understand.
+INFO 2025-02-09 17:30:09,388 playwright_google_meet 52684 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 17:30:09,388 playwright_google_meet 52684 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 17:30:09,664 playwright_google_meet 52684 8735377472 Page title: Meet
+INFO 2025-02-09 17:30:14,962 playwright_google_meet 52684 8735377472 Clicking 'Ask to join' button
+ERROR 2025-02-09 17:31:15,128 playwright_google_meet 52684 8735377472 Error waiting for join confirmation: Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator("//div[contains(text(),'You’re in the meeting')]") to be visible
+
+ERROR 2025-02-09 17:31:15,484 playwright_google_meet 52684 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+ERROR 2025-02-09 17:31:15,593 playwright_google_meet 52684 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+INFO 2025-02-09 17:32:08,516 playwright_google_meet 54519 8735377472 Initializing automation for meeting: https://meet.google.com/icg-upfd-xag
+INFO 2025-02-09 17:32:08,516 playwright_google_meet 54519 8735377472 Attempting to join meeting at: https://meet.google.com/icg-upfd-xag
+INFO 2025-02-09 17:32:09,712 playwright_google_meet 54519 8735377472 Loaded existing session from file.
+INFO 2025-02-09 17:32:10,148 playwright_google_meet 54519 8735377472 Navigating to meeting URL: https://meet.google.com/icg-upfd-xag
+INFO 2025-02-09 17:32:11,849 playwright_google_meet 54519 8735377472 Browser Console: %c%s color:teal;font-size:24px Developing an extension for Meet? An add-on would work better.
+INFO 2025-02-09 17:32:11,850 playwright_google_meet 54519 8735377472 Browser Console: %c%s color:teal;font-size:16px Extensions frequently cause user issues by altering the page.
+INFO 2025-02-09 17:32:11,850 playwright_google_meet 54519 8735377472 Browser Console: %c%s font-size:16px https://developers.google.com/meet/add-ons
+INFO 2025-02-09 17:32:11,865 playwright_google_meet 54519 8735377472 Browser Console: %c%s color: red; background: yellow; font-size: 24px; WARNING!
+INFO 2025-02-09 17:32:11,866 playwright_google_meet 54519 8735377472 Browser Console: %c%s font-size: 18px; Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you don't understand.
+INFO 2025-02-09 17:32:13,247 playwright_google_meet 54519 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 17:32:13,248 playwright_google_meet 54519 8735377472 Browser Console: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+INFO 2025-02-09 17:32:13,360 playwright_google_meet 54519 8735377472 Page title: Meet
+INFO 2025-02-09 17:32:18,452 playwright_google_meet 54519 8735377472 Clicking 'Ask to join' button
+INFO 2025-02-09 17:32:25,572 playwright_google_meet 54519 8735377472 Browser Console: Failed to load resource: the server responded with a status of 404 ()
+INFO 2025-02-09 17:32:26,280 playwright_google_meet 54519 8735377472 Browser Console: Failed to load resource: the server responded with a status of 404 ()
+ERROR 2025-02-09 17:32:37,322 playwright_google_meet 54519 8735377472 Page Error: _.oh
+ERROR 2025-02-09 17:32:37,323 playwright_google_meet 54519 8735377472 Page Error: _.oh
+ERROR 2025-02-09 17:33:18,573 playwright_google_meet 54519 8735377472 Error waiting for join confirmation: Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator("//div[contains(text(),'You’re in the meeting')]") to be visible
+
+ERROR 2025-02-09 17:33:18,676 playwright_google_meet 54519 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?
+ERROR 2025-02-09 17:33:18,694 playwright_google_meet 54519 8735377472 Error closing browser: Event loop is closed! Is Playwright already stopped?

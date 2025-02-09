@@ -1,0 +1,66 @@
+
+[2025-02-09 13:58:03] Cron job started
+Test mode execution successful
+
+[2025-02-09 14:31:01] Cron job started
+Error: Error joining meeting: __init__() got an unexpected keyword argument 'meeting_link'
+
+[2025-02-09 14:39:03] Cron job started
+Error: No meeting data provided
+
+[2025-02-09 14:41:17] Cron job started
+Attempting to join meeting: Test Meeting at https://meet.google.com/gwd-farf-ept
+Join attempt response: {'status': 'success', 'message': 'Requested to join the meeting'}
+
+[2025-02-09 14:41:55] Cron job started
+Attempting to join meeting: Test Meeting at https://meet.google.com/gwd-farf-ept
+Join attempt response: {'status': 'success', 'message': 'Requested to join the meeting'}
+
+[2025-02-09 14:50:02] Cron job started
+Attempting to join meeting: tets Meeting3 at https://meet.google.com/gwd-farf-ept
+Join attempt response: {'status': 'success', 'message': 'Requested to join the meeting'}
+
+[2025-02-09 14:55:05] Cron job started
+Attempting to join meeting: Test Meeting at https://meet.google.com/gwd-farf-ept
+Join attempt response: {'status': 'success', 'message': 'Requested to join the meeting'}
+
+[2025-02-09 14:57:07] Cron job started
+Attempting to join meeting: Test Meeting at https://meet.google.com/gwd-farf-ept
+Join attempt response: {'status': 'success', 'message': 'Requested to join the meeting'}
+
+[2025-02-09 14:57:27] Cron job started
+Attempting to join meeting: Test Meeting at https://meet.google.com/gwd-farf-ept
+Join attempt response: {'status': 'success', 'message': 'Requested to join the meeting'}
+
+[2025-02-09 15:40:18] Cron job started
+Attempting to join meeting: Test Meeting at https://meet.google.com/gwd-farf-ept
+Join attempt response: {'status': 'success', 'message': 'Requested to join the meeting'}
+
+[2025-02-09 15:41:22] Cron job started
+Attempting to join meeting: Test Meeting at https://meet.google.com/gwd-farf-ept
+Join attempt response: {'status': 'success', 'message': 'Requested to join the meeting'}
+
+[2025-02-09 15:49:05] Cron job started
+Attempting to join meeting: Test Meeting at https://meet.google.com/gwd-farf-ept
+Join attempt response: {'status': 'error', 'message': "No 'Ask to join' button found"}
+
+[2025-02-09 15:53:48] Cron job started
+Attempting to join meeting: Test Meeting at https://meet.google.com/gwd-farf-ept
+Join attempt response: None
+Error: Error in join_meeting command: 'NoneType' object is not subscriptable
+
+[2025-02-09 16:03:46] Cron job started
+Attempting to join meeting: Test Meeting at https://meet.google.com/gwd-farf-ept
+Join attempt response: {'status': 'error', 'message': 'Failed to confirm join request'}
+
+[2025-02-09 16:06:40] Cron job started
+Attempting to join meeting: Test Meeting at https://meet.google.com/gwd-farf-ept
+Join attempt response: {'status': 'error', 'message': 'Failed to confirm join request'}
+
+[2025-02-09 17:30:02] Cron job started
+Attempting to join meeting: Test : Bot Joining at https://meet.google.com/icg-upfd-xag
+Join attempt response: {'status': 'error', 'message': 'Failed to confirm join request'}
+
+[2025-02-09 17:32:08] Cron job started
+Attempting to join meeting: Test Meeting at https://meet.google.com/icg-upfd-xag
+Join attempt response: {'status': 'error', 'message': 'Failed to confirm join request'}

@@ -101,15 +101,23 @@ def get_stored_credentials():
 
 
 def extract_meeting_details(request):
+    """Extract meeting details from Google Calendar and save to CSV, avoiding duplicates."""
     credentials = get_stored_credentials()
+    print(f"\n{'=' * 50}")
+    print(f"Calendar check started at: {datetime.now()}")
 
     if not credentials:
+        print("No credentials found!")
         return JsonResponse({"error": "User not authenticated"}, status=401)
 
     try:
+        # Initialize the Calendar API service
         service = build("calendar", "v3", credentials=credentials)
         now = datetime.now(pytz.UTC)
 
+        print(f"Checking for events after: {now}")
+
+        # Fetch events from Google Calendar
         events_result = service.events().list(
             calendarId='primary',
             timeMin=now.isoformat(),
@@ -119,45 +127,96 @@ def extract_meeting_details(request):
         ).execute()
 
         events = events_result.get('items', [])
-        meeting_details = []
+        print(f"Found {len(events)} upcoming events")
 
-        # Use existing CSV file
+        # Debug: Print each event found
+        for event in events:
+            print(f"Event: {event.get('summary')} at {event.get('start', {}).get('dateTime')}")
+
+        meeting_details = []
         csv_filepath = 'meeting_invites.csv'
 
         # Define CSV headers
         csv_headers = ['Summary', 'Start Time', 'End Time', 'Meet Link', 'Conference URI']
 
-        # Append to existing CSV file
+        print(f"Writing to CSV: {os.path.abspath(csv_filepath)}")
+
+        # Read existing entries to avoid duplicates
+        existing_entries = set()
+        if os.path.exists(csv_filepath):
+            with open(csv_filepath, 'r', newline='', encoding='utf-8') as file:
+                reader = csv.DictReader(file)
+                for row in reader:
+                    # Create a tuple of values to use as a unique identifier
+                    entry_key = (
+                        row['Summary'],
+                        row['Start Time'],
+                        row['End Time'],
+                        row['Meet Link'],
+                        row['Conference URI']
+                    )
+                    existing_entries.add(entry_key)
+            print(f"Found {len(existing_entries)} existing entries in CSV")
+        else:
+            # Create new file with headers if it doesn't exist
+            with open(csv_filepath, 'w', newline='', encoding='utf-8') as file:
+                writer = csv.DictWriter(file, fieldnames=csv_headers)
+                writer.writeheader()
+                print("Created new CSV file with headers")
+
+        # Append new, non-duplicate entries to CSV file
+        new_entries_count = 0
         with open(csv_filepath, mode='a', newline='', encoding='utf-8') as file:
             writer = csv.DictWriter(file, fieldnames=csv_headers)
-
-            # If file is empty, write headers
-            if os.path.getsize(csv_filepath) == 0:
-                writer.writeheader()
 
             for event in events:
                 meeting_info = {
                     'Summary': event.get('summary', 'No Title'),
-                    'Start Time': event.get('start', {}).get('dateTime'),
-                    'End Time': event.get('end', {}).get('dateTime'),
+                    'Start Time': event.get('start', {}).get('dateTime', ''),
+                    'End Time': event.get('end', {}).get('dateTime', ''),
                     'Meet Link': event.get('hangoutLink', ''),
                     'Conference URI': event.get('conferenceData', {})
                     .get('entryPoints', [{}])[0].get('uri', '')
                 }
-                meeting_details.append(meeting_info)
-                writer.writerow(meeting_info)
 
+                # Check if this entry already exists
+                entry_key = (
+                    meeting_info['Summary'],
+                    meeting_info['Start Time'],
+                    meeting_info['End Time'],
+                    meeting_info['Meet Link'],
+                    meeting_info['Conference URI']
+                )
+
+                if entry_key not in existing_entries:
+                    meeting_details.append(meeting_info)
+                    writer.writerow(meeting_info)
+                    existing_entries.add(entry_key)
+                    new_entries_count += 1
+                    print(f"Wrote new event: {meeting_info['Summary']}")
+                else:
+                    print(f"Skipped duplicate event: {meeting_info['Summary']}")
+
+        print(f"Added {new_entries_count} new events to CSV")
+        print(f"{'=' * 50}\n")
+
+        # Return JSON response with results
         return JsonResponse({
             "meetings": meeting_details,
-            "count": len(meeting_details),
-            "message": "Meeting details appended to meeting_invites.csv"
+            "total_events_found": len(events),
+            "new_events_added": new_entries_count,
+            "message": f"Found {len(events)} events, added {new_entries_count} new events to CSV",
+            "timestamp": now.isoformat()
         })
 
     except Exception as e:
-        print(f"Calendar API error: {str(e)}")
+        error_message = f"Error in calendar extraction: {str(e)}"
+        print(f"ERROR: {error_message}")
+        print(f"{'=' * 50}\n")
         return JsonResponse({
             "error": str(e),
-            "error_type": type(e).__name__
+            "error_type": type(e).__name__,
+            "timestamp": datetime.now(pytz.UTC).isoformat()
         }, status=500)
 
 
